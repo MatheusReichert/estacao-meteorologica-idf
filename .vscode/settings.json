@@ -1,0 +1,30 @@
+{
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "idf.adapterTargetName": "esp32",
+    "idf.customExtraPaths": "/home/reichert/.espressif/tools/xtensa-esp-elf-gdb/11.2_20220823/xtensa-esp-elf-gdb/bin:/home/reichert/.espressif/tools/riscv32-esp-elf-gdb/11.2_20220823/riscv32-esp-elf-gdb/bin:/home/reichert/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin:/home/reichert/.espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin:/home/reichert/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin:/home/reichert/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin:/home/reichert/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/reichert/.espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/bin:/home/reichert/.espressif/tools/esp-rom-elfs/20220823",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/home/reichert/.espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/share/openocd/scripts",
+        "ESP_ROM_ELF_DIR": "/home/reichert/.espressif/tools/esp-rom-elfs/20220823/"
+    },
+    "idf.espIdfPath": "/home/reichert/esp/esp-idf",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32.cfg"
+    ],
+    "idf.pythonBinPath": "/home/reichert/.espressif/python_env/idf5.0_py3.11_env/bin/python",
+    "idf.toolsPath": "/home/reichert/.espressif",
+    "files.associations": {
+        "chrono": "cpp",
+        "freertos.h": "c",
+        "esp_system.h": "c",
+        "bme_sensor.h": "c",
+        "string.h": "c",
+        "task.h": "c",
+        "stdio.h": "c",
+        "tsl_sensor.h": "c",
+        "tsl2591.h": "c",
+        "sgp_sensor.h": "c"
+    },
+    "idf.port": "/dev/ttyUSB0",
+    "idf.flashType": "UART"
+}
