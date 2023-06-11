@@ -23,7 +23,10 @@
         "stdio.h": "c",
         "tsl_sensor.h": "c",
         "tsl2591.h": "c",
-        "sgp_sensor.h": "c"
+        "sgp_sensor.h": "c",
+        "ml_sensor.h": "c",
+        "esp_log.h": "c",
+        "adc_types.h": "c"
     },
     "idf.port": "/dev/ttyUSB0",
     "idf.flashType": "UART"

@@ -5,11 +5,17 @@ dependencies:
       service_url: https://api.components.espressif.com/
       type: service
     version: 1.0.0-beta
+  espressif/esp_mqtt_cxx:
+    component_hash: d65e459793ff320f81b57fbcd451610636e8175dcd33512481420eb476cae5c5
+    source:
+      service_url: https://api.components.espressif.com/
+      type: service
+    version: 0.1.0
   idf:
     component_hash: null
     source:
       type: idf
     version: 5.0.2
-manifest_hash: 50b44f0b3c173c41c8ec9cb110193a409f3c84717c9223899b4b1582540fff1d
+manifest_hash: 40cd68c3353feebba7bc81ffa30dfb80399f477c8f125a01a3226543b8762ad3
 target: esp32
 version: 1.0.0
