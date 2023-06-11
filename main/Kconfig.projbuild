@@ -29,7 +29,7 @@ menu "Weather Station configuration"
 
     config BROKER_URL
         string "Broker URL"
-        default "mqtt://mqtt.eclipseprojects.io"
+        default "mqtt://ulzlxuqt:bckVRhrsrl7siwj97kGl7xtg_pGK8b69@jackal.rmq.cloudamqp.com"
         help
             URL of the broker to connect to
     config USERNAME

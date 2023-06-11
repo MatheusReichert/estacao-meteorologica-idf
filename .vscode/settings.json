@@ -26,7 +26,9 @@
         "sgp_sensor.h": "c",
         "ml_sensor.h": "c",
         "esp_log.h": "c",
-        "adc_types.h": "c"
+        "adc_types.h": "c",
+        "system_error": "cpp",
+        "mqtt.h": "c"
     },
     "idf.port": "/dev/ttyUSB0",
     "idf.flashType": "UART"

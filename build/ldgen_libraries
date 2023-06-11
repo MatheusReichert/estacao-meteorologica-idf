@@ -58,8 +58,6 @@
 /home/reichert/pi2/weather-station/build/esp-idf/spiffs/libspiffs.a
 /home/reichert/pi2/weather-station/build/esp-idf/ulp/libulp.a
 /home/reichert/pi2/weather-station/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-/home/reichert/pi2/weather-station/build/esp-idf/espressif__esp-idf-cxx/libespressif__esp-idf-cxx.a
-/home/reichert/pi2/weather-station/build/esp-idf/espressif__esp_mqtt_cxx/libespressif__esp_mqtt_cxx.a
 /home/reichert/pi2/weather-station/build/esp-idf/main/libmain.a
 /home/reichert/pi2/weather-station/build/esp-idf/i2cdev/libi2cdev.a
 /home/reichert/pi2/weather-station/build/esp-idf/ads111x/libads111x.a
