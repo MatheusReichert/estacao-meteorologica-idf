@@ -4054,6 +4054,16 @@
             {
                 "children": [],
                 "depends_on": null,
+                "help": null,
+                "id": "TASK_DELAY",
+                "name": "TASK_DELAY",
+                "range": null,
+                "title": "vTaskDelay Sensors",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
                 "help": "GPIO number for I2C Master clock line.",
                 "id": "EXAMPLE_I2C_MASTER_SCL",
                 "name": "EXAMPLE_I2C_MASTER_SCL",

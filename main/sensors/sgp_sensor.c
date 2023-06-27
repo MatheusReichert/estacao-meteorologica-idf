@@ -76,6 +76,6 @@ void sgp_task(void *pvParamters) {
              voc_index_name(voc_index));
 
     // Wait until 1 seconds (VOC cycle time) are over.
-    vTaskDelayUntil(&last_wakeup, pdMS_TO_TICKS(1000));
+    vTaskDelayUntil(&last_wakeup, pdMS_TO_TICKS(CONFIG_TASK_DELAY));
   }
 }

@@ -11,6 +11,10 @@ menu "Weather Station configuration"
             bool "BME680_I2C_ADDR_1 (0x77)"
     endchoice
 
+    config TASK_DELAY
+        int "vTaskDelay Sensors"
+        default 3000
+
     config EXAMPLE_I2C_MASTER_SCL
         int "SCL GPIO Number"
         default 5 if IDF_TARGET_ESP8266

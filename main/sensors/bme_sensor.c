@@ -52,6 +52,6 @@ void bme_read_task(void *pvParameters) {
     }
 
     // Passive wait for 1 second
-    vTaskDelay(pdMS_TO_TICKS(1000));
+    vTaskDelay(pdMS_TO_TICKS(CONFIG_TASK_DELAY));
   }
 }

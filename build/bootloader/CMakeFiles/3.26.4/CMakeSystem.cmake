@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.3.5-200.fc38.x86_64")
+set(CMAKE_HOST_SYSTEM "Linux-6.3.7-200.fc38.x86_64")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.3.5-200.fc38.x86_64")
+set(CMAKE_HOST_SYSTEM_VERSION "6.3.7-200.fc38.x86_64")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
 include("/home/reichert/esp/esp-idf/tools/cmake/toolchain-esp32.cmake")

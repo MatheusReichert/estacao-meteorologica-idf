@@ -8,6 +8,7 @@
 */
 #include "esp_event.h"
 #include "esp_log.h"
+#include "esp_sntp.h"
 #include "esp_system.h"
 #include "esp_wifi.h"
 #include "freertos/FreeRTOS.h"
@@ -66,10 +67,19 @@ static EventGroupHandle_t s_wifi_event_group;
  * - we failed to connect after the maximum amount of retries */
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT BIT1
+#define SNTP_SERVER "pool.ntp.org"
+#define TIMEZONE_OFFSET_SEC                                                    \
+  (3600 * -3) // Timezone offset in seconds (e.g., UTC+1)
 
 static const char *TAG = "wifi station";
 
 static int s_retry_num = 0;
+
+void initialize_sntp() {
+  sntp_setoperatingmode(SNTP_OPMODE_POLL);
+  sntp_setservername(0, SNTP_SERVER);
+  sntp_init();
+}
 
 static void event_handler(void *arg, esp_event_base_t event_base,
                           int32_t event_id, void *event_data) {
@@ -90,6 +100,7 @@ static void event_handler(void *arg, esp_event_base_t event_base,
     ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
     s_retry_num = 0;
     xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
+    initialize_sntp();
   }
 }
 
